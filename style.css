@@ -1,0 +1,26 @@
+.contant {
+    background: grey;
+    width: 100%;
+}
+
+.contant form {
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+
+.contant form input,
+.contant form textarea {
+    width: 100%;
+    margin-bottom: .8rem;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+}
+
+.contant form textarea {
+    resize: none;
+}
