@@ -1,2 +1,2 @@
 # toast-form-submit
-creating my own form submission using api, node.js, and using nodemailer to hopefully add into my portfolio
+My portfolio project has a form submission, but it utilizes a free form submit website to get it to send forms to my email. Because of this, I can't add a toast whenever a user submits a form. I am creating this project to teach myself how to create a serverless function that uses NodeJS to create a small API and try to take advantage of nodemailer to be able to receive emails whenever a user submits the form. Once I can get this to work then maybe I can replace the form on my portfolio website to make the form submitting more polished.
