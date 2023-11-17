@@ -11,8 +11,10 @@
     
     <section id="contact" class="contant">
         <form onsubmit="sendContactInfo(); reset(); return false;">
-            <input type="text" placeholder="First Name" name="First" required>
-            <input type="text" placeholder="Last Name" name="Last" required>
+            <input type="text" id="firstname" placeholder="First Name" name="First Name" required>
+            <input type="text" id="lastname" placeholder="Last Name" name="Last Name" required>
+            <input type="email" id="email" placeholder="Email" name="Email" required>
+            <textarea id="message" cols="30" rows="10" placeholder="Message*" name="Message" required></textarea>
             <div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
@@ -21,20 +23,6 @@
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendContactInfo() {
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "username",
-                Password : "password",
-                To : 'them@website.com',
-                From : "you@isp.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
